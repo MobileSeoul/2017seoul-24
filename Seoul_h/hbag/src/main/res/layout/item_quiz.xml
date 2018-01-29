@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center_vertical|center_horizontal"
+    card:layout_anchorGravity="center_vertical|center_horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/card_view_round"
+        card:cardBackgroundColor="@color/white"
+        card:cardCornerRadius="10dp"
+        tools:ignore="InefficientWeight,ObsoleteLayoutParam,RtlHardcoded">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/quiz_num_title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/SBLUE"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/quiz_num"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                card:layout_column="0"
+                card:layout_columnWeight="22"
+                card:layout_row="0"
+                card:layout_rowWeight="20"
+                tools:ignore="HardcodedText,SpUsage" />
+
+
+            <TextView
+                android:id="@+id/quiz_region_title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/SBLUE"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/quiz_region"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                card:layout_column="1"
+                card:layout_columnWeight="30"
+                card:layout_row="0"
+                card:layout_rowWeight="20"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <TextView
+                android:id="@+id/quiz_num"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/border_tap"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1002"
+                android:textColor="@color/SBLUE"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                card:layout_column="0"
+                card:layout_columnWeight="22"
+                card:layout_row="1"
+                card:layout_rowWeight="70"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <TextView
+                android:id="@+id/quiz_region"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/border_tap"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="여의도역"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                card:layout_column="1"
+                card:layout_columnWeight="70"
+                card:layout_row="1"
+                card:layout_rowWeight="70"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <TextView
+                android:id="@+id/tap"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="1dp"
+                android:background="@drawable/border_side"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="〈"
+                android:textColor="@color/SBLUE"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                card:layout_column="2"
+                card:layout_columnWeight="8"
+                card:layout_row="0"
+                card:layout_rowSpan="2"
+                card:layout_rowWeight="100"
+                tools:ignore="HardcodedText,SpUsage" />
+
+        </android.support.v7.widget.GridLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/con"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".joinmanage_package.LoginActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/iv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:scaleType="center"
+        android:text="@string/Login_title"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"
+        tools:ignore="SpUsage" />
+
+    <LinearLayout
+        android:id="@+id/syncbtset_lay"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/Login"
+            android:layout_width="275dp"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:text="@string/시작하기"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:pb_textComplete="@string/완료"
+            app:pb_textError="@string/실패"
+            app:pb_textProgress="@string/Loading"
+            tools:ignore="RtlHardcoded,SpUsage"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="357dp" />
+
+        <TextView
+            android:id="@+id/bt_logout_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="30"
+            android:text="@string/id_change"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_lay"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/join_tm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="30"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/회원가입"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="SpUsage"
+            tools:layout_editor_absoluteY="538dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="|"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintRight_toLeftOf="@+id/find_pass_t"
+            app:layout_constraintTop_toBottomOf="@+id/join_tm"
+            app:layout_constraintVertical_bias="0.142"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+        <TextView
+            android:id="@+id/find_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="30"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/아이디찾기"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintHorizontal_bias="0.976"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/Login"
+            tools:ignore="RtlHardcoded,SpUsage" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="|"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintRight_toLeftOf="@+id/find_pass_t"
+            app:layout_constraintTop_toBottomOf="@+id/join_tm"
+            app:layout_constraintVertical_bias="0.142"
+            tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+        <TextView
+            android:id="@+id/find_pass_t"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="30"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/비밀번호찾기"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Login"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="RtlHardcoded,SpUsage" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text_log_lay"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/setting_back_xm"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462">
+
+        <EditText
+            android:id="@+id/loginId"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="275dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="50"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/EID"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_t"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/loginPass"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="275dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="50"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:hint="@string/비밀번호입력"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/Login"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginId"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpUsage" />
+
+        <Button
+            android:id="@+id/bt_set"
+            android:layout_width="275dp"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:background="@drawable/selector_seoulhang"
+            tools:ignore="HardcodedText"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginbutton_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black_p50"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_log_lay"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/bt_googleLogin"
+            android:layout_width="275dp"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="50"
+            android:background="@drawable/selector_google"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/bt_facebookLogin"
+            android:layout_width="275dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="50"
+            android:background="@drawable/selector_facebook"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

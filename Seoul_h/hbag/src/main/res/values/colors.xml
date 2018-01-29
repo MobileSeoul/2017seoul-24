@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Green00cc66">#00cc66</color>
+    <color name="Carkviewline">#dbdbdb</color>
+    <color name="BLUE">#0070c0</color>
+    <color name="SKYBLUE">#87ceeb</color>
+    <color name="LIGHTGREEN_">#00cc99</color>
+    <color name="Creamson">#dc143c</color>
+    <color name="GOLD">#ffd700</color>
+    <color name="PUPLE">#9932cc</color>
+    <color name="PURPLE">#9932cc</color>
+    <color name="ORINGERED">#ff4500</color>
+    <color name="LIME">#00ff00</color>
+    <color name="RED">#ff0000</color>
+    <color name="SIVER">#c0c0c0</color>
+    <color name="BRONZE">#b87333</color>
+    <color name="silver_a">#64c0c0c0</color>
+    <color name="sblue">#0697fc</color>
+    <color name="SBLUE">#0697fc</color>
+    <color name="back_wight">#e9e9e9</color>
+    <color name="back_white">#e9e9e9</color>
+    <color name="white">#ffffff</color>
+    <color name="black_a">#64000000</color>
+    <color name="alpha">#00dbdbdb</color>
+</resources>

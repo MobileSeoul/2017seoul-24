@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/quiz_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_weight="5"
+        android:background="@color/SBLUE"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/quiz_list"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/Carkviewline"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_quizlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="94"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/no_quiz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:layout_weight="100"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/풀수있는문제없음"
+            android:textSize="20dp"
+            android:visibility="visible"
+            tools:ignore="NestedWeights,SpUsage" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="94"
+        android:overScrollMode="always" />
+
+</LinearLayout>

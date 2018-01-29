@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context="com.hbag.seoulhang.joinmanage_package.register_package.JoinActivity">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical|start"
+        android:text="@string/회원가입"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/setting_back_xm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="85"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/ID_lay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="15"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/id_TextInputLay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:theme="@style/AppTheme.NoActionBar"
+                    tools:ignore="NestedWeights">
+
+                    <EditText
+                        android:id="@+id/id_t"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/id"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textSize="16dp"
+                        tools:ignore="SpUsage" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.dd.processbutton.iml.ActionProcessButton
+                    android:id="@+id/check_b"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/card_view_round"
+                    android:text="@string/중복확인"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    app:pb_colorComplete="@color/Green00cc66"
+                    app:pb_colorError="@color/RED"
+                    app:pb_colorNormal="@color/SBLUE"
+                    app:pb_colorPressed="@color/SKYBLUE"
+                    app:pb_colorProgress="@color/Green00cc66"
+                    app:pb_cornerRadius="@dimen/corner_radius"
+                    app:pb_textComplete="✔"
+                    app:pb_textError="ⅹ"
+                    app:pb_textProgress="@string/확인중"
+                    tools:ignore="SmallSp,SpUsage" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="15"
+                android:theme="@style/AppTheme.NoActionBar"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/password_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/비밀번호"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16dp"
+                    tools:ignore="SpUsage" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="15"
+                android:theme="@style/AppTheme.NoActionBar"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/password_ct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/비밀번호확인"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16dp"
+                    tools:ignore="SpUsage" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="15"
+                android:theme="@style/AppTheme.NoActionBar"
+                app:errorEnabled="true"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="25dp">
+
+                <EditText
+                    android:id="@+id/name_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/이름"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16dp"
+                    tools:ignore="SpUsage" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="15"
+                android:theme="@style/AppTheme.NoActionBar"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/email_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="16dp"
+                    tools:ignore="SpUsage" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="10"
+                android:backgroundTint="@color/sblue"
+                android:backgroundTintMode="src_atop"
+                android:text="@string/취소"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="@+id/eng_1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eng_1"
+                app:layout_constraintVertical_bias="0.285"
+                tools:ignore="ButtonOrder,ButtonStyle,HardcodedText,RtlHardcoded,SpUsage" />
+
+            <Button
+                android:id="@+id/commit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="10"
+                android:backgroundTint="@color/sblue"
+                android:backgroundTintMode="src_atop"
+                android:text="@string/확인"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0.285"
+                tools:ignore="ButtonStyle,HardcodedText,SpUsage" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
+
+

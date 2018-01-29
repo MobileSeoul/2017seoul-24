@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context="com.hbag.seoulhang.map_package.GooglemapsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical|end"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="95"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/map_msg"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            tools:ignore="NestedWeights,SpUsage" />
+
+        <ImageView
+            android:id="@+id/camera_bt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/camera"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        tools:layout="@layout/progress_loading" />
+
+
+</LinearLayout>

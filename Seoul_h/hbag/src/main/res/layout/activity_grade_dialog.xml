@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:background="@drawable/setting_back_xm"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="100"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/등급정보"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights,SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:orientation="vertical"
+                android:weightSum="80"
+                tools:ignore="NestedWeights">
+
+                <ImageView
+                    android:id="@+id/unrank"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/tier_unrank"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/bronze"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/tier_bronze"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/silver"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/tier_silver"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/gold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/tier_gold"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/platinum"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/tier_platinum"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/diamond"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/tier_diamond"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/master"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/tier_master"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/challenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/tier_challenger"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="35"
+                android:orientation="vertical"
+                android:weightSum="80"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:id="@+id/unrank_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/초보자"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="NestedWeights,SpUsage" />
+
+                <TextView
+                    android:id="@+id/bronze_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/브론즈"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/silver_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/실버"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/gold_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/골드"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <TextView
+                    android:id="@+id/platinum_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/플래티넘"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/diamond_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/다이아몬드"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <TextView
+                    android:id="@+id/master_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/마스터"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/challenger_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/챌린저"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="35"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:id="@+id/tv_unrank"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="NestedWeights,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_bronze"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_silver"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_gold"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_platinum"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_diamond"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_master"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/tv_challenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf"></LinearLayout>
+
+        <Button
+            android:id="@+id/commit"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="10"
+            android:background="@drawable/card_view_button"
+            android:text="@string/ghkrdls"
+            android:textColor="@color/white"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    android:overScrollMode="always"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="vertical"
+        android:weightSum="100"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/border1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/Carkviewline"
+            android:orientation="horizontal"
+            tools:ignore="DuplicateIds,NestedWeights"></LinearLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="40"
+            app:columnCount="2"
+            app:rowCount="2">
+
+            <ImageView
+                android:id="@+id/mapview"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:contentDescription="@string/map_view"
+                android:scaleType="fitXY"
+                app:layout_columnWeight="30"
+                app:layout_rowWeight="70"
+                app:srcCompat="@drawable/selector_map_image" />
+
+            <ImageView
+                android:id="@+id/cameraon_b"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:contentDescription="@string/카메라버튼"
+                android:scaleType="fitXY"
+                app:layout_columnWeight="70"
+                app:layout_rowWeight="70"
+                app:srcCompat="@drawable/selector_camera" />
+
+            <ImageView
+                android:id="@+id/tutorial_b"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:contentDescription="@string/replay_descrip"
+                android:scaleType="fitXY"
+                app:layout_columnWeight="30"
+                app:layout_rowWeight="30"
+                app:srcCompat="@drawable/selector_help" />
+
+            <ImageView
+                android:id="@+id/achv_b"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:clickable="true"
+                android:contentDescription="@string/달성률"
+                android:scaleType="fitXY"
+                app:layout_columnWeight="70"
+                app:layout_rowWeight="30"
+                app:srcCompat="@drawable/selector_subway" />
+
+        </android.support.v7.widget.GridLayout>
+
+        <LinearLayout
+            android:id="@+id/border2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/Carkviewline"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/top_10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:text="@string/최근문제"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            tools:ignore="RtlHardcoded,SpUsage" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_rev"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="38"
+            android:nestedScrollingEnabled="true"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            tools:targetApi="lollipop" />
+
+        <LinearLayout
+            android:id="@+id/border3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/Carkviewline"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="@string/Notice"
+            android:textColor="@android:color/black" />
+
+        <ViewFlipper
+            android:id="@+id/vf_notice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@drawable/notice_back"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/black">
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+</LinearLayout>

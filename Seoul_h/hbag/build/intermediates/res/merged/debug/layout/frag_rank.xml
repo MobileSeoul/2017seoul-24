@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="4.5"
+        android:background="@color/SBLUE"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/내순위"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="14dp"
+        tools:ignore="HardcodedText,NestedWeights,SpUsage" />
+
+    <LinearLayout
+        android:id="@+id/my_rank_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="8"
+        android:background="@drawable/p_tapbar"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/my_rank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            tools:ignore="NestedWeights,SpUsage" />
+
+        <ImageView
+            android:id="@+id/my_grade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:scaleType="fitCenter"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            tools:ignore="ContentDescription,SpUsage" />
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="55"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/my_point"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            tools:ignore="SpUsage" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/Carkviewline"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="4.5"
+        android:background="@color/SBLUE"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/tv_rank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/순위"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            tools:ignore="NestedWeights,SpUsage" />
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/등급"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="55"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/닉네임"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/점수"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="81.5" />
+
+</LinearLayout>

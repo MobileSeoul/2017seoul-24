@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hbag.seoulhang.home_package.Home_Main"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/drawer_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title_home"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/drawer_position"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/drawer_layout"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/camera_position"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/drawer_layout"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_title"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="bottom"
+        android:minHeight="50dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_title"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".joinmanage_package.LoginActivity">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/tap_bar"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"></android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/tap_bar"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tapbar"
+                android:gravity="center_vertical|center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@+id/bt_home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/bt_quiz"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.6"
+                    app:srcCompat="@drawable/selector_home"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/bt_quiz"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/bt_map"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/selector_quiz"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/bt_info"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginRight="45dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toRightOf="@+id/bt_map"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/selector_info"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/bt_rank"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/bt_info"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/selector_rank"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/side_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:background="@color/Carkviewline"
+                android:orientation="vertical"
+                android:weightSum="100"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/tv_side_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/side_title_facebook"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/background_light"
+                    tools:ignore="ContentDescription,NestedWeights" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:background="@color/Carkviewline"
+                    android:orientation="vertical"
+                    android:weightSum="100"
+                    tools:ignore="NestedWeights">
+
+                    <LinearLayout
+                        android:id="@+id/info_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="100"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:weightSum="102">
+
+                        <TextView
+                            android:id="@+id/info_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/selector_edit_text"
+                            android:clickable="true"
+                            android:gravity="left|center_vertical|center_horizontal"
+                            android:text="@string/내정보설정"
+                            android:textColor="@android:color/black"
+                            android:textColorLink="@android:color/black"
+                            android:textSize="14dp"
+                            tools:ignore="HardcodedText,NestedWeights,RtlHardcoded,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/player_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/text_name"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/player_grade"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/text_grade"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/player_point_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/text_point"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <LinearLayout
+                            android:id="@+id/boder_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:background="@color/Carkviewline"
+                            android:clickable="true"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <TextView
+                            android:id="@+id/map_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/side_map_selector"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/mapview_text"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/tutorial_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/side_info_tuto_selector"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/side_tuto"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/grade_chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/side_grade_selector"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/등급표"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                        <TextView
+                            android:id="@+id/setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/side_setting_selector"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/설정"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="12"
+                    android:background="@color/Carkviewline"
+                    android:baselineAligned="false"
+                    android:clickable="true"
+                    android:gravity="bottom|end"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="70"
+                        android:background="@drawable/tapbar"
+                        android:gravity="center_vertical|end"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <ImageButton
+                            android:id="@+id/logout_bt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="18"
+                            android:background="@android:color/background_light"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/logout_bt_normal"
+                            tools:ignore="ContentDescription,NestedWeights" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <color name="BLUE">#003f6c</color>
+    <color name="BRONZE">#b87333</color>
+    <color name="Carkviewline">#dbdbdb</color>
+    <color name="Creamson">#bb2933</color>
+    <color name="GOLD">#ffd700</color>
+    <color name="Green00cc66">#00cc66</color>
+    <color name="LIGHTGREEN_">#00cc99</color>
+    <color name="LIME">#00ff00</color>
+    <color name="ORINGERED">#ff4500</color>
+    <color name="PUPLE">#9932cc</color>
+    <color name="PURPLE">#9932cc</color>
+    <color name="RED">#78ff0000</color>
+    <color name="SIVER">#c0c0c0</color>
+    <color name="SKYBLUE">#87ceeb</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="light_blue">#3281fc</color>
+    <color name="silver_a">#64171717</color>
+    <dimen name="size">14dp</dimen>
+    <item name="masked" type="id"/>
+    <item name="visible" type="id"/>
+    <string name="ARCam">ARCam</string>
+    <string name="EEmail">이메일을 입력해주세요.</string>
+    <string name="EID">아이디를 입력해주세요.</string>
+    <string name="EPass">6~18자리 영문+숫자+특수문자(/, #, "&amp;" ,  "&lt;" , ">" 는 제외)를 혼합한 비밀번호를 입력해주세요.</string>
+    <string name="Eage">나이를 입력해주세요.</string>
+    <string name="Email">Email</string>
+    <string name="Ename">이름을 입력해주세요.</string>
+    <string name="Enname">닉네임을 입력해주세요.</string>
+    <string name="GPSMessage">이 게임은 GPS 위치 데이터를 필요로 합니다.\nGPS를 설정하시겠습니까?</string>
+    <string name="GPSN">아니요</string>
+    <string name="GPSY">예</string>
+    <string name="GPS퍼미션">지도를 사용하시려면 위치정보접근을 허가해야합니다.</string>
+    <string name="GPS퍼미션체크박스">지도를 사용하시려면 스마트폰 설정에서 위치정보접근을 허가해야합니다.</string>
+    <string name="GPS활성여부">위치 정보 데이터를 불러올 수 없습니다. 다시 시도해주세요.</string>
+    <string name="Hint_info">"힌트 : "</string>
+    <string name="Loading">응답대기중</string>
+    <string name="Login">Login</string>
+    <string name="Login_title">로그인</string>
+    <string name="Logout_msg">로그아웃되었습니다.</string>
+    <string name="Name">Name</string>
+    <string name="Notice">한 줄 공지</string>
+    <string name="Password">Password</string>
+    <string name="Setting">설정</string>
+    <string name="Signin">Signin</string>
+    <string name="Signup">Signup</string>
+    <string name="Submit">Submit</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"홈 탐색"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"위로 탐색"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"옵션 더보기"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"완료"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"전체 보기"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"앱 선택"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"사용 안함"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"사용"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"검색..."</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"검색어 삭제"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"검색어"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"검색"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"검색어 보내기"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"음성 검색"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"공유 대상"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s와(과) 공유"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"접기"</string>
+    <string name="action_settings">action_settings</string>
+    <string name="age">나이</string>
+    <string name="answer">정답을 선택하세요.</string>
+    <string name="app_name">서울행</string>
+    <string name="back_key_msg">한번 더 누르시면 종료됩니다.</string>
+    <string name="camera_descrip">만일 주변에 타겟이 있다면, 이 버튼을 눌러 카메라를 실행하세요.\n카메라를 통해 3D 객체를 확인할 수 있습니다. 대상을 찾으면, 터치해서 획득하세요.</string>
+    <string name="can_not_connent_to_server">서버에 연결할 수 없습니다.</string>
+    <string name="can_not_make_quiz">포인트가 부족하여 문제를 낼 수 없습니다.</string>
+    <string name="checkEmail">형식에 맞지 않는 메일주소입니다.</string>
+    <string name="checkplease">ID중복확인을 해주십시오.</string>
+    <string name="close">닫기</string>
+    <string name="close_drawer">close drawerclose drawerclose drawerclose drawerclose drawer</string>
+    <string name="com_facebook_image_download_unknown_error">이미지를 다운로드하는 중 예기치 않은 오류가 발생했습니다.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView에 로그인하려면 인터넷 권한이 필요합니다</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest 오류</string>
+    <string name="com_facebook_like_button_liked">좋아요</string>
+    <string name="com_facebook_like_button_not_liked">좋아요</string>
+    <string name="com_facebook_loading">읽어들이는 중...</string>
+    <string name="com_facebook_loginview_cancel_action">취소</string>
+    <string name="com_facebook_loginview_log_in_button">로그인</string>
+    <string name="com_facebook_loginview_log_in_button_long">Facebook으로 로그인</string>
+    <string name="com_facebook_loginview_log_out_action">로그아웃</string>
+    <string name="com_facebook_loginview_log_out_button">로그아웃</string>
+    <string name="com_facebook_loginview_logged_in_as">로그인할 이름: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Facebook 계정으로 로그인함</string>
+    <string name="com_facebook_send_button_text">보내기</string>
+    <string name="com_facebook_share_button_text">공유하기</string>
+    <string name="com_facebook_tooltip_default">새로운 기능! 이제 앱과 어떤 정보를 공유할지 자유롭게 선택할 수 있습니다.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"사용 설정"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Google Play 서비스를 사용하도록 설정해야 <ns1:g id="APP_NAME">%1$s</ns1:g>이(가) 작동합니다."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play 서비스 사용"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"설치"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"기기에 Google Play 서비스가 설치되어 있어야 <ns1:g id="APP_NAME">%1$s</ns1:g>이(가) 실행됩니다."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play 서비스 설치"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play 서비스 오류"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g>에서 Google Play 서비스를 사용하는 데 문제가 있습니다. 다시 시도하세요."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>은(는) Google Play 서비스 없이는 실행되지 않으나, 기기에서 Google Play 서비스를 지원하지 않습니다."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"업데이트"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Google Play 서비스를 업데이트해야 <ns1:g id="APP_NAME">%1$s</ns1:g>이(가) 실행됩니다."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play 서비스 업데이트"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"현재 업데이트 중인 Google Play 서비스가 있어야 <ns1:g id="APP_NAME">%1$s</ns1:g>이(가) 실행됩니다."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"새 버전의 Google Play 서비스가 필요합니다. 곧 자동으로 업데이트됩니다."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"스마트폰에서 열기"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"로그인"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Google 계정으로 로그인"</string>
+    <string name="currentpass">현재 비밀번호를 입력해주세요.</string>
+    <string name="dialog_ok">확인</string>
+    <string name="email">E-mail</string>
+    <string name="enter_quizmake">입력하지 않은 항목이 있습니다.</string>
+    <string name="facebook_app_id">130262031034086</string>
+    <string name="facebook_leave_msg">탈퇴하시면 계정의 모든 정보가 삭제됩니다.</string>
+    <string name="facebook_with">                페이스북으로 로그인 중</string>
+    <string name="first_set_msg">초기 설정을 진행해주세요.</string>
+    <string name="flip">한 줄 공지 자동전환</string>
+    <string name="ghkrdls">확인</string>
+    <string name="google_auth_key">AIzaSyAM_yLXX5PM6rGttCC86w50OCIHPTtir30</string>
+    <string name="google_failed_to_login">계정연동에 실패했거나 로그인을 취소했습니다.</string>
+    <string name="google_with">                구글계정으로 로그인 중</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_msg">힌트를 보시겠습니까?\n힌트 보너스가 1소모됩니다.</string>
+    <string name="hintmake">문제에 대한 힌트를 입력해주세요.</string>
+    <string name="home_descrip">첫 시작 페이지입니다.\n가장 인기 있는 퀴즈 10순위와 공지사항이 표시되며,\n지도 보기, 카메라 실행, 퀴즈 출제 등을 할 수 있습니다.</string>
+    <string name="id">ID</string>
+    <string name="id_change"><u>아이디 변경하기</u></string>
+    <string name="info_descrip">점수와 힌트 포인트, 출제 포인트를 확인할 수 있습니다.\n지금까지 풀어온 퀴즈들을 확인할 수 있으며 서울시 내의 구 단위로 달성률과 해당 구의 설명을 볼 수 있습니다.</string>
+    <string name="insert_quiz">Insert Quiz</string>
+    <string name="kakao_app_key">45d3abc0fba429258e010957df473e42</string>
+    <string name="lang_descrip">언어를 선택합니다.</string>
+    <string name="load_failed">유저 정보를 불러오지 못했습니다. 다시 로그인해주세요.</string>
+    <string name="localrate_see">지역별 달성률 보기</string>
+    <string name="loginsuccess">%s님 환영합니다.\n시작버튼을 눌러주세요!</string>
+    <string name="make_quiz">퀴즈 출제</string>
+    <string name="make_quiz_check">퀴즈를 출제하면 전용 포인트가 필요합니다. 출제하시겠습니까?</string>
+    <string name="make_quiz_count">%d개의 문제를 낼 수 있습니다!</string>
+    <string name="makequiz_descrip">지도상의 현재 위치에 퀴즈를 추가할 수 있습니다. 퀴즈 출제에는 출제 포인트가 필요합니다.\n</string>
+    <string name="map_msg">약 200미터 근방에 있어야 타겟을 획득할 수 있습니다.</string>
+    <string name="map_view">지도 보기</string>
+    <string name="map_view_descrip">타겟의 위치를 지도로 확인할 수 있습니다.</string>
+    <string name="mapview_text">                지도 보기</string>
+    <string name="menu_descrip">터치하면 보조 메뉴가 열립니다.\n보조 메뉴에서는 프로필수정, 앱 설정 등을 할 수 있으며, 간략한 사용자 정보를 표시합니다.</string>
+    <string name="messenger_send_button_text">보내기</string>
+    <string name="naverclientid">S25ZUcloW2JU4Xk2SJTD</string>
+    <string name="naversecret">IxuQXBjLMf</string>
+    <string name="normal_with">                일반계정으로 로그인 중</string>
+    <string name="not_available_name">이름은 1~12자 사이의 영문, 한글로만 작성해주세요.</string>
+    <string name="not_available_nickname">닉네임은 1~9자 사이의 영어, 한글, 숫자만 가능합니다.</string>
+    <string name="not_available_special_ch">특수문자(/, #, "&amp;" ,  "&lt;" , ">")는 금지되어 있습니다.\n문제와 힌트는 5글자 이상 작성바랍니다.</string>
+    <string name="not_good_id">영문과 숫자로만 이루어진 5~12자 아이디를 입력해주세요.\n첫 글자는 반드시 영문입니다.</string>
+    <string name="not_good_quiz">과도한 욕설이나 부적절한 내용이\n포함된 퀴즈는 임의로 삭제될 수 있습니다.\nOX 퀴즈 형식으로 출제할 수 있습니다.\n출제 포인트는 50점을 획득할 경우, 1점을 획득합니다.</string>
+    <string name="notice_descrip">한 줄 공지를 자동으로 전환시킵니다.\n비활성화시 수동으로 페이지를 넘깁니다.</string>
+    <string name="num">num</string>
+    <string name="open_drawer">open draweropen draweropen draweropen draweropen draweropen drawer</string>
+    <string name="ox_descrip">OX 퀴즈는 한 번만 풀 수 있으며, 정답일 경우 10점, 오답일 경우 5점을 획득합니다.</string>
+    <string name="password_not_good">패스워드가 일치하지 않습니다.</string>
+    <string name="please_check_already_id">이미 같은 아이디가 존재합니다.</string>
+    <string name="please_check_id">아이디 또는 비밀번호가 일치하지 않습니다.</string>
+    <string name="please_check_name">이미 같은 닉네임이 존재합니다.</string>
+    <string name="quiz_descrip">획득한 퀴즈를 확인할 수 있습니다.\n퀴즈는 획득한 순서대로 나열되며, 주관식, OX 퀴즈로 구성되어있습니다.\n또한, 힌트 포인트를 가지고 있다면, 힌트를 볼 수 있습니다.\n힌트 포인트는 30점을 얻을 경우 1점을 획득합니다.</string>
+    <string name="quiz_list">퀴즈 목록</string>
+    <string name="quiz_num">퀴즈 번호</string>
+    <string name="quiz_region">획득 장소</string>
+    <string name="quizmake">문제를 입력해주세요.</string>
+    <string name="rank_descrip">순위와 등급, 점수를 확인할 수 있습니다.\n또한, 전체 순위표를 확인할 수 있습니다.</string>
+    <string name="region">지역</string>
+    <string name="replay">다시 보기</string>
+    <string name="replay_descrip">이 설명을 다시 보고 싶으시면,\n이 버튼을 눌러주세요.</string>
+    <string name="score">"점수 : "</string>
+    <string msgid="146198913615257606" name="search_menu_title">"검색"</string>
+    <string name="setting_lang">언어 설정</string>
+    <string name="side_tuto">                앱 소개 다시 보기</string>
+    <string name="side_닉네임">                닉네임 : %s</string>
+    <string name="side_등급">                등급 : %s</string>
+    <string name="side_점수">                점수 : %s</string>
+    <string name="side_코드번호">                코드번호 : %s</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submitquiz_title">퀴즈 내기</string>
+    <string name="succes_make_quiz">퀴즈를 출제했습니다!</string>
+    <string name="tuto_2">서울행은 증강현실을 이용한\n교육/관광용 게임입니다.</string>
+    <string name="tuto_3">지도에 나와 있는 위치로 가서\n카메라를 켜고 주변을 둘러보세요.</string>
+    <string name="tuto_4">목표를 발견하면 터치하여 퀴즈를 획득하세요.\n퀴즈를 풀어서 점수를 쌓고 순위를 올리세요.</string>
+    <string name="unity_denied">데이터 접근 권한이 없으면 정상 작동이 불가능합니다.</string>
+    <string name="unity_permission_camera">카메라 기능을 사용하기 위해 권한이 필요합니다.</string>
+    <string name="unity_permission_gps">현재위치를 파악하기 위해 GPS 데이터가 필요합니다.</string>
+    <string name="unity_permission_phone">게임 구동 가능 여부를 확인하기 위해 스마트폰 상태 정보가 필요합니다.</string>
+    <string name="unity_permission_storage">타겟 위치를 확인하기 위해 내부 저장소를 읽을 권한이 필요합니다.</string>
+    <string name="visitors">방문자 수 %d</string>
+    <string name="welcome">%s님 환영합니다!</string>
+    <string name="you_can_not_get">자신이 출제한 퀴즈는 획득할 수 없습니다.</string>
+    <string name="같은닉네임존재">이미 사용중인 닉네임입니다.</string>
+    <string name="경도">경도</string>
+    <string name="계정연동실패">계정 동기화에 실패했습니다.\n다시 시도해주십시오.</string>
+    <string name="골드">골드</string>
+    <string name="남">남</string>
+    <string name="남은힌트">힌트</string>
+    <string name="내순위">내 순위</string>
+    <string name="내위치">내 위치</string>
+    <string name="내정보">내 정보</string>
+    <string name="내정보설정">                내 정보수정</string>
+    <string name="닉네임">닉네임</string>
+    <string name="닉네임입력">닉네임을 입력해주세요.</string>
+    <string name="다이아몬드">다이아몬드</string>
+    <string name="달성률">달성률 </string>
+    <string name="등급">등급</string>
+    <string name="등급정보">등급표</string>
+    <string name="등급차트">챌린저 = 450점 \n마스터 = 340점 \n다이아몬드 = 240점 \n플래티넘 = 160점 \n골드 = 90점 \n실버 = 40점 \n브론즈 = 10점</string>
+    <string name="등급표">                등급표</string>
+    <string name="랭킹">랭킹</string>
+    <string name="로그인실패">로그인에 실패했습니다.\n다시 시도해주세요.</string>
+    <string name="마스터">마스터</string>
+    <string name="메뉴버튼">메뉴</string>
+    <string name="브론즈">브론즈</string>
+    <string name="비밀번호">비밀번호</string>
+    <string name="비밀번호변경">비밀번호 변경하기</string>
+    <string name="비밀번호변경비밀번호">비밀번호 변경을 위해 기존 비밀번호를 입력해주세요.</string>
+    <string name="비밀번호변경완료">성공적으로 비밀번호를 변경하였습니다!</string>
+    <string name="비밀번호일치">비밀번호가 일치하지 않습니다.</string>
+    <string name="비밀번호입력">비밀번호를 입력하세요.</string>
+    <string name="비밀번호찾기">비밀번호 찾기</string>
+    <string name="비밀번호확인">비밀번호 확인</string>
+    <string name="사용가능">사용가능</string>
+    <string name="새문제">새 문제를 획득하였습니다!</string>
+    <string name="새비밀번호">새 비밀번호를 입력하세요.</string>
+    <string name="설명">사진을 찾아서 문제를 획득하고, 점수를 얻으십시오.\n점수에 따라 등급이 결정되고, 순위에 따라 상품이 지급됩니다.</string>
+    <string name="설정">                설정</string>
+    <string name="성별">성별</string>
+    <string name="순위">순위</string>
+    <string name="순위표">순위표</string>
+    <string name="승급">승급했습니다!</string>
+    <string name="시작하기">시작!</string>
+    <string name="실버">실버</string>
+    <string name="실패">실패..</string>
+    <string name="아이디찾기">아이디 찾기</string>
+    <string name="아이디찾을수없음">일치하는 아이디가 없습니다.</string>
+    <string name="알림">알림</string>
+    <string name="여">여</string>
+    <string name="연락처">연락처</string>
+    <string name="오답">오답입니다!</string>
+    <string name="완료">완료!</string>
+    <string name="위도">위도</string>
+    <string name="위치정보불가">위치정보 가져올 수 없음.</string>
+    <string name="이름">이름</string>
+    <string name="이미가지고있는문제">이미 가지고 있는 문제 입니다.</string>
+    <string name="인증번호">인증번호</string>
+    <string name="잘못된GPS">잘못된 GPS좌표</string>
+    <string name="점수">점수</string>
+    <string name="점수_grade">%d점</string>
+    <string name="정답을입력하세요">정답을 입력하세요.</string>
+    <string name="정답이다">정답입니다!</string>
+    <string name="정보수정">내 정보수정</string>
+    <string name="정보수정질문">정보를 수정하시겠습니까?</string>
+    <string name="주소미발견">주소를 발견하지 못했습니다.</string>
+    <string name="중복확인">확인</string>
+    <string name="지역별달성률"> 지역별 정보 및 달성률</string>
+    <string name="지오코더">지오코딩 서비스 사용불가.</string>
+    <string name="챌린저">챌린저</string>
+    <string name="초보자">초보자</string>
+    <string name="최근문제">인기 지역 TOP 10</string>
+    <string name="취소">취소</string>
+    <string name="카메라버튼">카메라</string>
+    <string name="카메라켜기">                카메라 켜기</string>
+    <string name="코드를입력">인증코드를 입력하세요.</string>
+    <string name="코드불일치">인증코드가 일치하지 않습니다.</string>
+    <string name="코드입력">인증코드를 입력해주세요.</string>
+    <string name="퀴즈">퀴즈</string>
+    <string name="탈퇴성공">회원탈퇴가 정상적으로 처리되었습니다.</string>
+    <string name="탈퇴재확인">정말로 탈퇴하시겠습니까?</string>
+    <string name="풀수있는문제없음">현재 풀 수 있는 문제가 없습니다.\n새로운 문제를 획득해주세요.</string>
+    <string name="플래티넘">플래티넘</string>
+    <string name="해결한문제"> 해결한 문제</string>
+    <string name="현재해결한문제없음">현재 해결한 문제가 없습니다.</string>
+    <string name="홈">홈</string>
+    <string name="확인">확인</string>
+    <string name="확인메일보냄">인증 메일이 성공적으로 보내졌습니다.</string>
+    <string name="확인중">확인중</string>
+    <string name="회원가입">회원가입</string>
+    <string name="회원가입성공">회원가입을 축하합니다!</string>
+    <string name="회원정보수정완료">회원정보수정이 완료되었습니다!</string>
+    <string name="회원탈퇴">회원탈퇴</string>
+    <string name="회원탈퇴비밀번호">회원탈퇴를 위해 비밀번호를 입력해주세요.</string>
+    <string name="힌트없음">남은 힌트가 없습니다!</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+        <item name="colorControlNormal">#4d4e4e</item>
+        <item name="colorControlActivated">#FF0697FC</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="UnityThemeSelector" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+        <item name="colorControlNormal">#2196F3</item>
+
+        <item name="colorControlActivated">#009688</item>
+    </style>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/Carkviewline"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/info_grade"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/등급"
+            app:srcCompat="@drawable/tier_gold" />
+
+        <TextView
+            android:id="@+id/info_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_makequiz"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/info_grade"
+            android:layout_toRightOf="@+id/info_grade"
+            android:gravity="center_vertical"
+            android:maxWidth="120dp"
+            android:text="가나둘셋넷"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/info_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/info_name"
+            android:layout_alignStart="@+id/info_name"
+            android:layout_below="@+id/info_name"
+            android:maxWidth="145dp"
+            android:text="cwh6272cwh6272@naver.com"
+            android:textColor="@android:color/black"
+            android:textSize="10dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/info_makequiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/info_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/info_name"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="@string/make_quiz_count"
+            android:textColor="@android:color/black"
+            android:textSize="12dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/info_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/info_makequiz"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/info_email"
+            android:layout_toRightOf="@+id/info_email"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="점수 : 9999"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/info_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/info_point"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/info_email"
+            android:layout_toRightOf="@+id/info_email"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="힌트 : 9999"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_view_rate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="6"
+        android:background="@drawable/card_view_round"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/localrate_see"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/border_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="4.5"
+        android:background="@color/SBLUE"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/해결한문제"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        tools:ignore="SpUsage" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="68.5"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/no_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="68.5"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/현재해결한문제없음"
+        android:textSize="20dp"
+        android:visibility="gone"
+        tools:ignore="SpUsage" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "760341892608",
+    "project_id": "seoulhang-181413"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760341892608:android:07479dda6ac018c0",
+        "android_client_info": {
+          "package_name": "com.hbag.seoulhang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760341892608-fkdjif0bj9gg9jmnc39np87h61scroeb.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "760341892608-q1miodpccr7221pdvldhamq6ror0cjlg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hbag.seoulhang",
+            "certificate_hash": "4df03c3484ec6e62826fb9465282362f27b0b536"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArqcPgmwsl4CSl5nGdtqp_ZLaykRorwy8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

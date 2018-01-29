@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="UnityThemeSelector" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+    <item name="colorControlNormal">#2196F3</item>
+
+    <item name="colorControlActivated">#009688</item>
+</style>
+</resources>
